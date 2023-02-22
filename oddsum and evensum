@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int n, r=0;
+	int diff=0;
+	int evensum=0;
+	int oddsum=0;
+	n=8804261;
+	while(n!=0)
+	{
+		r=n%10;
+		if(r%2==0)
+		{
+			evensum+=r;
+		}
+	else
+    	{
+ 		    oddsum+=r;
+    	}
+    	n/=10;
+	}
+	diff=oddsum-evensum;
+	printf("%d", diff);
+}
